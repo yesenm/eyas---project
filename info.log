@@ -1,0 +1,188 @@
+{"level":"error","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 11:40:39"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 11:41:31"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 11:46:05"}
+{"level":"info","message":"DB connected","timestamp":"2022-04-10- 11:46:05"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 11:46:52"}
+{"level":"info","message":"DB connected","timestamp":"2022-04-10- 11:46:52"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 11:47:33"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 11:47:33"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 11:48:30"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 11:48:30"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 11:50:26"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 11:50:27"}
+{"level":"info","message":{"__v":0,"_id":"62530ae0bbfc01bc5461b1d8","email_remitente":"joli@jolines.com","mensaje":"quiero mandar mi primer log","remitente":"jolines gonsalez"},"timestamp":"2022-04-10- 11:50:40"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 11:52:39"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 11:52:39"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 11:54:46"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 11:54:46"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 11:56:38"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 11:56:38"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 11:58:29"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 11:58:29"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 11:58:45"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 11:58:45"}
+{"level":"info","message":{"__v":0,"_id":"62530cd0f7f6305e8be30030","email":"yesenm999@gmail.com","password":"$2b$10$7Q9IFOABqE1p03p6u8dHWOd2.h7goZQ5DKdE.4SpoLAVgu1cbdDL6","rol":"2","username":"admin"},"timestamp":"2022-04-10- 11:58:56"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:01:15"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:01:15"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:02:19"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:02:19"}
+{"level":"error","message":{"__v":0,"_id":"62530da37fdfa0187a9f9b39","email":"yesenm999@gmail.com","password":"$2b$10$bwMHacfYpgKjiubIVKbWx.VLV6inkwgGMWRt.gLHqnXcwJKxrKStq","rol":"2","username":"admin"},"timestamp":"2022-04-10- 12:02:27"}
+{"level":"error","message":"Este usuario ya se ha registrado","timestamp":"2022-04-10- 12:02:27"}
+{"level":"info","message":{"__v":0,"_id":"62530dc57fdfa0187a9f9b3b","email":"yoongi@min.com","password":"$2b$10$wGzvRnQF3WfnjRPcIULEReTIcztJ9r4ldSpfME0P1453zgVeh2wRy","rol":"2","username":"yoongi"},"timestamp":"2022-04-10- 12:03:02"}
+{"level":"info","message":"Nuevo usuario registrado","timestamp":"2022-04-10- 12:03:02"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:03:31"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:03:31"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:07:07"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:07:07"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:07:24"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:07:24"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:08:08"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:08:08"}
+{"level":"error","message":null,"timestamp":"2022-04-10- 12:08:17"}
+{"level":"error","message":"El usuario no existe.","timestamp":"2022-04-10- 12:08:17"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:11:00"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:11:00"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:11:06"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:11:06"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:12:22"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:12:22"}
+{"level":"info","message":"el usuario ha ingresado.","timestamp":"2022-04-10- 12:12:31"}
+{"level":"info","message":{"__v":0,"_id":"624d27e74ecabd6bbe3401b1","email":"a@a.com","password":"$2b$10$45boueqzLdT4cja4bFtFW.zKm7NXrFgqg7Oc6GDbCydFjj5bZr/Iu","rol":"1","username":"admin"},"timestamp":"2022-04-10- 12:12:31"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:13:44"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:13:44"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:14:39"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:14:39"}
+{"level":"info","message":"El usuario {\n  _id: new ObjectId(\"624d27e74ecabd6bbe3401b1\"),\n  username: 'admin',\n  email: 'a@a.com',\n  password: '$2b$10$45boueqzLdT4cja4bFtFW.zKm7NXrFgqg7Oc6GDbCydFjj5bZr/Iu',\n  rol: '1',\n  __v: 0\n} ha ingresado al sistema.","timestamp":"2022-04-10- 12:14:46"}
+{"level":"info","message":"admin","timestamp":"2022-04-10- 12:14:46"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:15:13"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:15:13"}
+{"level":"info","message":"El usuario admin ha ingresado al sistema.","timestamp":"2022-04-10- 12:15:18"}
+{"level":"info","message":"admin","timestamp":"2022-04-10- 12:15:18"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:16:14"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:16:14"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:19:06"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:19:06"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:19:44"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:19:44"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:20:34"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:20:52"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:20:52"}
+{"level":"info","message":"El usuario \"yesenm\" ha ingresado al sistema.","timestamp":"2022-04-10- 12:20:59"}
+{"level":"info","message":"El usuario \"yesenm\" ha ingresado al sistema.","timestamp":"2022-04-10- 12:21:45"}
+{"level":"info","message":"El usuario \"admin\" ha ingresado al sistema.","timestamp":"2022-04-10- 12:21:58"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:23:39"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:23:39"}
+{"level":"info","message":"El usuario \"admin\" ha ingresado al sistema.","timestamp":"2022-04-10- 12:24:13"}
+{"level":"info","message":"El usuario \"admin\" ha cerrado sesión.","timestamp":"2022-04-10- 12:24:14"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:24:58"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:24:58"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:27:58"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:27:58"}
+{"level":"info","message":"El usuario \"admin\" ha ingresado al sistema.","timestamp":"2022-04-10- 12:28:02"}
+{"level":"info","message":"El usuario: \"admin\", ha eliminado el registro: 6249c914fa6da036b970adf8 de la colección \"Mensajes\".","timestamp":"2022-04-10- 12:28:04"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:28:40"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:28:40"}
+{"level":"info","message":"El usuario \"admin\" ha ingresado al sistema.","timestamp":"2022-04-10- 12:28:46"}
+{"level":"info","message":"El usuario: 'admin', ha eliminado el registro: 6249ca95c33cb8ce60d6073c de la colección 'Mensajes'.","timestamp":"2022-04-10- 12:28:48"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:30:00"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:30:00"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:30:36"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:30:36"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:31:08"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:31:08"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:31:45"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:31:45"}
+{"level":"info","message":"El usuario \"jungkook\" ha ingresado al sistema.","timestamp":"2022-04-10- 12:31:55"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:32:50"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:32:50"}
+{"level":"info","message":"El usuario \"jungkook\" ha ingresado al sistema.","timestamp":"2022-04-10- 12:33:04"}
+{"level":"info","message":"El usuario: 'jungkook', ha eliminado el usuario: 624b64d773ee2c4e4f7277c6 de la colección 'Usuarios Registrados'.","timestamp":"2022-04-10- 12:33:13"}
+{"level":"info","message":"El usuario 'jungkook' ha cerrado sesión.","timestamp":"2022-04-10- 12:33:38"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:35:14"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:35:14"}
+{"level":"info","message":"El usuario \"admin\" ha ingresado al sistema.","timestamp":"2022-04-10- 12:35:16"}
+{"level":"info","message":"El usuario: 'admin', ha editado el usuario: 624dd82163b058eb583e455c de la colección 'Usuarios Registrados'.","timestamp":"2022-04-10- 12:35:26"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:37:40"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:37:40"}
+{"level":"error","message":"La contraseña ha sifo incorrecta.","timestamp":"2022-04-10- 12:37:46"}
+{"level":"error","message":"Se ha ingresado un usuario que no existe.","timestamp":"2022-04-10- 12:37:50"}
+{"level":"info","message":"El usuario \"admin\" ha ingresado al sistema.","timestamp":"2022-04-10- 12:37:56"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:38:38"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:38:38"}
+{"level":"info","message":"El usuario \"admin\" ha ingresado al sistema.","timestamp":"2022-04-10- 12:38:44"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:39:04"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:39:04"}
+{"level":"info","message":"El usuario \"admin\" ha ingresado al sistema.","timestamp":"2022-04-10- 12:39:54"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:41:13"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:41:13"}
+{"level":"info","message":"El usuario \"admin\" ha ingresado al sistema.","timestamp":"2022-04-10- 12:41:18"}
+{"level":"info","message":{"__v":0,"_id":"625316e082e0d4b62581acfe","email":"jiminpark@gmail.com","password":"$2b$10$dMb55fUuyJGFEyG73DP2R./c1VwdPzmFCSHLmxi3VvWNGPvFIOaS.","rol":"1","username":"jimin"},"timestamp":"2022-04-10- 12:41:52"}
+{"level":"info","message":"Nuevo usuario registrado","timestamp":"2022-04-10- 12:41:52"}
+{"level":"info","message":"El usuario: 'admin', ha registrado al administrador: jimin en la colección 'Usuarios Registrados'.","timestamp":"2022-04-10- 12:41:52"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:42:34"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:42:34"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:44:12"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:44:12"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:45:28"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:45:28"}
+{"level":"info","message":"El usuario \"admin\" ha ingresado al sistema.","timestamp":"2022-04-10- 12:45:38"}
+{"level":"error","message":"'admin' ya se ha registrado, pero lo intentó registrar el administrador: .","timestamp":"2022-04-10- 12:45:52"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:46:40"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:46:40"}
+{"level":"info","message":"El usuario \"jungkook\" ha ingresado al sistema.","timestamp":"2022-04-10- 12:46:47"}
+{"level":"info","message":"'yesenm' ya se ha registrado, pero lo intentó registrar el administrador: 'jungkook'.","timestamp":"2022-04-10- 12:47:14"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:48:00"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:48:00"}
+{"level":"info","message":"El usuario con los datos: '{\n  username: 'namjoon',\n  email: 'nam@joon.com',\n  password: '$2b$10$0FeTrnKjzvzOgcM3hOEQ0uzm6ij892l7tELICDzO2Hj.LGOhC3qPS',\n  rol: '2',\n  _id: new ObjectId(\"625318609bbc3a34ffb8e23b\"),\n  __v: 0\n}' ha sifo registrado correctamente.","timestamp":"2022-04-10- 12:48:16"}
+{"level":"error","message":"La contraseña ha sifo incorrecta.","timestamp":"2022-04-10- 12:48:48"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:49:29"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:49:29"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:50:13"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:50:13"}
+{"level":"error","message":"La contraseña ha sifo incorrecta.","timestamp":"2022-04-10- 12:50:18"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:50:35"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:50:35"}
+{"level":"error","message":"La contraseña ha sifo incorrecta.","timestamp":"2022-04-10- 12:51:11"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:52:04"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:52:04"}
+{"level":"error","message":"La contraseña que ingresó el usuario: admin, ha sido incorrecta.","timestamp":"2022-04-10- 12:52:16"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:53:28"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:53:28"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:53:33"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:53:33"}
+{"level":"error","message":"El usuario: jhoncena, no existe en la base de datos.","timestamp":"2022-04-10- 12:53:43"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:54:25"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:54:25"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:54:54"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:54:54"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:55:44"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:55:44"}
+{"level":"info","message":"El usuario 'jungkook' ha ingresado al sistema.","timestamp":"2022-04-10- 12:55:49"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:56:47"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:56:47"}
+{"level":"info","message":"El usuario 'jungkook' ha ingresado al sistema.","timestamp":"2022-04-10- 12:56:54"}
+{"level":"info","message":"El usuario: 'jungkook', ha intentado editar al usuario: hope de la colección 'Usuarios Registrados'.","timestamp":"2022-04-10- 12:56:59"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:57:26"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:57:26"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:57:48"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:57:48"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:57:54"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:57:55"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 12:57:58"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 12:57:58"}
+{"level":"info","message":"El usuario 'admin' ha ingresado al sistema.","timestamp":"2022-04-10- 12:58:04"}
+{"level":"info","message":"El usuario: 'admin', ha intentado editar al usuario: 'hope' de la colección 'Usuarios Registrados'.","timestamp":"2022-04-10- 12:58:08"}
+{"level":"info","message":"El usuario: 'admin', ha editado el usuario: 624dd82163b058eb583e455c de la colección 'Usuarios Registrados'.","timestamp":"2022-04-10- 12:58:11"}
+{"level":"info","message":"El usuario: 'admin', ha intentado editar al usuario: 'yesenm' de la colección 'Usuarios Registrados'.","timestamp":"2022-04-10- 12:58:27"}
+{"level":"info","message":"El usuario: 'admin', ha editado el usuario: 624b3af29f9d8fa7c298563c de la colección 'Usuarios Registrados'.","timestamp":"2022-04-10- 12:58:31"}
+{"level":"info","message":"El usuario 'admin' ha cerrado sesión.","timestamp":"2022-04-10- 13:00:06"}
+{"level":"error","message":"La contraseña que ingresó el usuario: 'yesenm', ha sido incorrecta.","timestamp":"2022-04-10- 13:00:12"}
+{"level":"error","message":"La contraseña que ingresó el usuario: 'yesenm', ha sido incorrecta.","timestamp":"2022-04-10- 13:00:28"}
+{"level":"info","message":"El usuario 'admin' ha ingresado al sistema.","timestamp":"2022-04-10- 13:01:14"}
+{"level":"info","message":"El usuario: 'admin', ha eliminado el registro: 62530ae0bbfc01bc5461b1d8 de la colección 'Mensajes'.","timestamp":"2022-04-10- 13:01:30"}
+{"level":"info","message":"El usuario 'admin' ha cerrado sesión.","timestamp":"2022-04-10- 13:02:14"}
+{"level":"error","message":"La contraseña que ingresó el usuario: 'admin', ha sido incorrecta.","timestamp":"2022-04-10- 13:07:44"}
+{"level":"info","message":"El usuario 'admin' ha ingresado al sistema.","timestamp":"2022-04-10- 13:07:48"}
+{"level":"info","message":"El usuario: 'admin', ha intentado editar al usuario: 'yesenm' de la colección 'Usuarios Registrados'.","timestamp":"2022-04-10- 13:11:57"}
+{"level":"info","message":"El usuario: 'admin', ha intentado editar al usuario: 'yesenm' de la colección 'Usuarios Registrados'.","timestamp":"2022-04-10- 13:12:24"}
+{"level":"info","message":"El usuario 'admin' ha cerrado sesión.","timestamp":"2022-04-10- 13:12:28"}

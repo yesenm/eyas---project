@@ -19,7 +19,9 @@
     "mongoose": "^6.2.9",
     "morgan": "^1.10.0",
     "passport": "^0.5.2",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "winston": "^3.7.2",
+    "winston-mongodb": "^5.0.7"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

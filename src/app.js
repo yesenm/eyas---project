@@ -13,12 +13,13 @@ require('./config/passport');
 
 //connecting db
 mongoose.connect('mongodb://localhost/eyas')
-  .then(db => console.log('DB connected'))
-  .catch(err => console.log(err));
+  .then(db => logger.info('La base de datos ha sido conectada.'))
+  .catch(err => logger.error(err));
 
 //importing routes
 const indexRoutes = require('./routes/index');
 const req = require('express/lib/request');
+const logger = require('./logger');
 
 //settings
 app.set('port', process.env.PORT || 4000);
@@ -61,7 +62,7 @@ app.use((req, res, next) => {
 
 //starting the server
 app.listen(app.get('port'), () => {
-  console.log(`App corriendo en el puerto: ${app.get('port')}`);
+  logger.info(`App corriendo en el puerto: ${app.get('port')}`);
 })
 
 

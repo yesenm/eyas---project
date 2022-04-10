@@ -6,6 +6,7 @@ const router = express.Router();
 const { isAuthAdmin } = require('../helpers/sessionAdmin');
 const { isAuthUser } = require('../helpers/sessionUser');
 const {body, validationResult} = require('express-validator');
+const logger = require('../logger');
 
 
 //librería de autenticación de usuarios
@@ -55,9 +56,9 @@ router.post('/addm', [
     next();
   }else{
     //res.send('¡Validación Exitosa!')
-    
     const task = new Task(req.body);
     await task.save();
+    logger.info(task);
     req.flash('success_msg', 'Mensaje enviado correctamente.')
     res.redirect('/');
   }
@@ -68,6 +69,7 @@ router.post('/addm', [
 router.get('/deletem/:id', isAuthAdmin, async (req, res) =>{
   const { id } = req.params;
   await Task.remove({ _id: id });
+  logger.info(`El usuario: '${req.user.username}', ha eliminado el registro: ${id} de la colección 'Mensajes'.`);
   req.flash('success_msg', 'Mensaje eliminado correctamente.')
   res.redirect('/b_entrada');
 });
@@ -92,6 +94,7 @@ router.get("/u_registrados", isAuthAdmin, async (req, res) =>{
 router.get('/deleteusers/:id', isAuthAdmin, async (req, res) =>{
   const { id } = req.params;
   await User.remove({ _id: id });
+  logger.info(`El usuario: '${req.user.username}', ha eliminado el usuario: ${id} de la colección 'Usuarios Registrados'.`);
   req.flash('success_msg', 'Usuario eliminado correctamente.')
   res.redirect('/u_registrados');
 });
@@ -103,9 +106,9 @@ router.get('/actualizar_u/:id', isAuthAdmin, async (req, res) =>{
   res.render('actualizar_u', {
     user
   });
-  console.log(user);
-});
+  logger.info(`El usuario: '${req.user.username}', ha intentado editar al usuario: '${user.username}' de la colección 'Usuarios Registrados'.`);
 
+});
 router.post('/editar/:id', isAuthAdmin, async (req, res) =>{
   const { id } = req.params;
   console.log({_id:id});
@@ -128,11 +131,11 @@ router.post('/editar/:id', isAuthAdmin, async (req, res) =>{
     res.redirect('/actualizar_u/'+ id);
   }else{
     await User.update({ _id: id }, req.body);
+    logger.info(`El usuario: '${req.user.username}', ha editado el usuario: ${id} de la colección 'Usuarios Registrados'.`);
     req.flash('success_msg', 'Usuario actualizado correctamente.')
     res.redirect('/u_registrados');
   }
 });
-
 
 router.get("/logs", isAuthAdmin, async (req, res) =>{
   (res.render("logs"));
@@ -187,9 +190,11 @@ router.post("/register_u",[
     
     await user.save(err => {
       if(err){
+        logger.error(`${user.username} ya se ha registrado.`);
         req.flash('danger_msg', 'Este usuario ya está registrado, crea uno diferente');
         res.redirect('/registro_u');
       }else{
+        logger.info(`El usuario con los datos: '${user}' ha sifo registrado correctamente.`);
         req.flash('success_msg', 'Usuario registrado correctamente.')
         res.redirect('/login');
       }
@@ -232,9 +237,13 @@ router.post("/register_a",[
     
     await user.save(err => {
       if(err){
+        logger.info(`'${user.username}' ya se ha registrado, pero lo intentó registrar el administrador: '${req.user.username}'.`);
         req.flash('danger_msg', 'Este usuario ya está registrado, crea uno diferente.');
         res.redirect('/registro_a');
       }else{
+        logger.info(user);
+        logger.info(`El usuario: '${req.user.username}', ha registrado al administrador: '${user.username}' en la colección 'Usuarios Registrados'.`);
+        
         req.flash('success_msg', 'Usuario registrado correctamente.')
         res.redirect('/registro_a');
       }
@@ -248,8 +257,10 @@ router.post('/authenticate', passport.authenticate('local', {
   failureFlash: true
 }), (req, res) =>{
   if(req.user.rol == 1){
+    logger.info(`El usuario '${req.user.username}' ha ingresado al sistema.`);
     res.redirect('/b_entrada');
   }else if(req.user.rol == 2){
+    logger.info(`El usuario '${req.user.username}' ha ingresado al sistema.`);
     res.redirect('/main');
   }
 }
@@ -264,6 +275,7 @@ router.get('/login', (req, res) =>{
 
 //Destruir sesión
 router.get('/logout', async (req, res) => {
+  logger.info(`El usuario '${req.user.username}' ha cerrado sesión.`);
   req.logout();
   res.redirect('/login');
 });

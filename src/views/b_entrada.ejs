@@ -31,10 +31,7 @@
                                 <td><%= tasks[i].remitente %></td>
                                 <td><%= tasks[i].email_remitente %></td>
                                 <td><%= tasks[i].mensaje%></td>
-                                <td>
-                                    
-                                    <button class="btn btn-warning" id="botonEmail" value="<%= tasks[i]._id %>" onclick="enviarEmail()"><i class="bi bi-envelope-fill"></i></button>
-                                    
+                                <td>                                    
                                     <a href="/deletem/<%= tasks[i]._id %>"><button class="btn btn-danger"><i class="bi bi-trash-fill"></i></button></a>
                                 </td>
                             </tr>
