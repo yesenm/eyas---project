@@ -186,3 +186,28 @@
 {"level":"info","message":"El usuario: 'admin', ha intentado editar al usuario: 'yesenm' de la colección 'Usuarios Registrados'.","timestamp":"2022-04-10- 13:11:57"}
 {"level":"info","message":"El usuario: 'admin', ha intentado editar al usuario: 'yesenm' de la colección 'Usuarios Registrados'.","timestamp":"2022-04-10- 13:12:24"}
 {"level":"info","message":"El usuario 'admin' ha cerrado sesión.","timestamp":"2022-04-10- 13:12:28"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 13:28:22"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 13:28:23"}
+{"level":"info","message":{"__v":0,"_id":"62532284187690bc1837d005","email_remitente":"eimmy@gonz.com","mensaje":"Hola, como están, les debo unos chetos.","remitente":"Eimmy Gonzalez"},"timestamp":"2022-04-10- 13:31:32"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 13:33:16"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 13:33:16"}
+{"level":"info","message":"App corriendo en el puerto: 4000","timestamp":"2022-04-10- 13:33:22"}
+{"level":"info","message":"La base de datos ha sido conectada.","timestamp":"2022-04-10- 13:33:22"}
+{"level":"info","message":"El usuario con los datos: '{\n  username: 'andy2001',\n  email: 'andy@a.com',\n  password: '$2b$10$WaADbBIkJeoguMfNTxuU.ea4jf60u5GP/spvmsD3sRinZH3ler6su',\n  rol: '2',\n  _id: new ObjectId(\"6253231e6e60c2595d21bd7e\"),\n  __v: 0\n}' ha sifo registrado correctamente.","timestamp":"2022-04-10- 13:34:06"}
+{"level":"info","message":"El usuario 'andy2001' ha ingresado al sistema.","timestamp":"2022-04-10- 13:34:52"}
+{"level":"info","message":"El usuario 'andy2001' ha cerrado sesión.","timestamp":"2022-04-10- 13:35:01"}
+{"level":"error","message":"El usuario: ronaldogato, no existe en la base de datos.","timestamp":"2022-04-10- 13:36:38"}
+{"level":"error","message":"La contraseña que ingresó el usuario: 'jungkook', ha sido incorrecta.","timestamp":"2022-04-10- 13:37:22"}
+{"level":"info","message":"El usuario 'jungkook' ha ingresado al sistema.","timestamp":"2022-04-10- 13:37:56"}
+{"level":"info","message":"El usuario: 'jungkook', ha eliminado el registro: 6249cad22703c111e1d887ef de la colección 'Mensajes'.","timestamp":"2022-04-10- 13:38:14"}
+{"level":"info","message":"'namjoon' ya se ha registrado, pero lo intentó registrar el administrador: 'jungkook'.","timestamp":"2022-04-10- 13:39:00"}
+{"level":"info","message":{"__v":0,"_id":"625324676e60c2595d21bd98","email":"jin@jin.com","password":"$2b$10$b.sdRgJoKmj93t1Hz5mS.OLnooVc834mnJMLReyd6BntLzqraMLkK","rol":"1","username":"seokjin"},"timestamp":"2022-04-10- 13:39:35"}
+{"level":"info","message":"El usuario: 'jungkook', ha registrado al administrador: 'seokjin' en la colección 'Usuarios Registrados'.","timestamp":"2022-04-10- 13:39:35"}
+{"level":"info","message":"El usuario: 'jungkook', ha intentado editar al usuario: 'namjoon' de la colección 'Usuarios Registrados'.","timestamp":"2022-04-10- 13:40:11"}
+{"level":"info","message":"El usuario: 'jungkook', ha editado el usuario: 625318609bbc3a34ffb8e23b de la colección 'Usuarios Registrados'.","timestamp":"2022-04-10- 13:40:32"}
+{"level":"info","message":"El usuario: 'jungkook', ha eliminado el usuario: 625318609bbc3a34ffb8e23b de la colección 'Usuarios Registrados'.","timestamp":"2022-04-10- 13:40:56"}
+{"level":"info","message":"El usuario 'jungkook' ha cerrado sesión.","timestamp":"2022-04-10- 13:41:14"}
+{"level":"error","message":"El usuario: wjbfljwebfñkwe; or 1=1, no existe en la base de datos.","timestamp":"2022-04-10- 13:42:40"}
+{"level":"error","message":"La contraseña que ingresó el usuario: 'yesenm', ha sido incorrecta.","timestamp":"2022-04-10- 13:43:37"}
+{"level":"info","message":"El usuario 'admin' ha ingresado al sistema.","timestamp":"2022-04-10- 13:45:25"}
+{"level":"info","message":"El usuario 'user' ha ingresado al sistema.","timestamp":"2022-04-10- 13:45:39"}

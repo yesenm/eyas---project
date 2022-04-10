@@ -137,9 +137,6 @@ router.post('/editar/:id', isAuthAdmin, async (req, res) =>{
   }
 });
 
-router.get("/logs", isAuthAdmin, async (req, res) =>{
-  (res.render("logs"));
-})
 
 router.get("/registro_u", (req, res) =>{
   (res.render("registro_u"));
@@ -174,7 +171,7 @@ router.post("/register_u",[
   .isLength({min:8, max: 25})
   .withMessage('La contraseña no debe tener menos de 8 carácteres ni más de 25.')
   .matches(/\d/)
-  .withMessage('La contraseña debe contener al menos un número.'),
+  .withMessage('Por la seguridad de tu cuenta, la contraseña debe contener al menos un número.'),
 ], async (req, res, next) =>{
   //Validación de los campos
   const errors = validationResult(req)
