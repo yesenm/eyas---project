@@ -1,0 +1,24 @@
+
+<% if (error && error.length > 0 ) { %>
+    <div class="header alert alert-danger alert-dismissible">
+        <strong> ERROR: </strong>
+        <%= error %> 
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+    </div>
+<% } %>
+
+<!--Mensaje de error-->
+<% if (danger_msg[0]) { %>
+    <div class="header alert alert-danger alert-dismissible">
+        <%= danger_msg %> 
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+    </div>
+<% } %>
+
+<!-- Mensaje satisfactorio -->
+<% if (success_msg[0]) { %>
+    <div class="header alert alert-success alert-dismissible">
+        <%= success_msg %> 
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+    </div>
+<% } %>

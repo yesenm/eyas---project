@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USUARIO</title>
+    <!-- Load Roboto font -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <!-- Load css styles -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/pluton.css" />
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <a href="#" class="brand">
+                    <img src="images/logoeyas2.png" alt="Logo" />
+                    <!-- This is website logo -->
+                </a>
+                <!-- Navigation button, visible on small resolution -->
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <i class="icon-menu"></i>
+                </button>
+                <!-- Main navigation -->
+                <div class="nav-collapse collapse pull-right">
+                    <ul class="nav" id="top-navigation">
+                        <li class="active"><a href="main">Catálogos</a></li>
+                        <li><a href="logout">CERRAR SESIÓN</a></li>
+                        
+                    </ul>
+                </div>
+                <!-- End main navigation -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Portfolio section start -->
+    <div class="section secondary-section " id="portfolio">
+        <div class="triangle"></div>
+        <div class="container">
+            <div class=" title">
+                <h1>Nuestros catálogos</h1>
+                <p>¡Bienvenid@ <b><%= user.username %></b>!</p>
+                <p>Ven y sumergete en el hoy y en lo bien que se siente lucir tu propio estilo.</p>
+                <h4></h4>
+            </div>
+            <ul class="nav nav-pills">
+                <li class="filter" data-filter="all">
+                    <a href="#noAction">Todo</a>
+                </li>
+                <li class="filter" data-filter="web">
+                    <a href="#noAction">Vestimenta</a>
+                </li>
+                <li class="filter" data-filter="photo">
+                    <a href="#noAction">Calzado</a>
+                </li>
+                <li class="filter" data-filter="identity">
+                    <a href="#noAction">Accesorios</a>
+                </li>
+            </ul>
+            <!-- Start details for portfolio project 1 -->
+            <div id="single-project">
+                <div id="slidingDiv" class="toggleDiv row-fluid single-project">
+                    <div class="span6">
+                        <img src="images/portafolio/confort.jpg" alt="project 1" />
+                    </div>
+                    <div class="span6">
+                        <div class="project-description">
+                            <div class="project-title clearfix">
+                                <h3>Primavera-Verano 2022</h3>
+                                <span class="show_hide close">
+                                    <i class="icon-cancel"></i>
+                                </span>
+                            </div>
+                            <p>¡Cree en ti misma!... e identificate con los estilo que nuestros catálogos ofrecen.
+                                El confort en esta temporada es nuestra prioridad, podrás notarlo en los outfits que hemos creado para ti.
+                            </p>
+                            <a href="http://cdn-img.andrea.com/mx/1/89/"><button class="message-btn2">Ver catálogo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End details for portfolio project 1 -->
+                <!-- Start details for portfolio project 2 -->
+                <div id="slidingDiv1" class="toggleDiv row-fluid single-project">
+                    <div class="span6">
+                        <img src="images/portafolio/backtoclass.jpg" alt="project 2">
+                    </div>
+                    <div class="span6">
+                        <div class="project-description">
+                            <div class="project-title clearfix">
+                                <h3>Regreso a Clases 2022</h3>
+                                <span class="show_hide close">
+                                    <i class="icon-cancel"></i>
+                                </span>
+                            </div>
+                            <p>La vida no se cuenta con los pasos que has dado o los zapatos que has usado, sino con las huellas que has dejado.
+                                El regreso a clases es la mejor temporada del año, porque pueden disfrutar y presumir de los mejores zapatos.</p>
+                            <a href="https://view.publitas.com/catalog-1/andcolegialesdic21/page/1?publitas_embed=maximized"><button class="message-btn2">Ver catálogo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End details for portfolio project 2 -->
+                <!-- Start details for portfolio project 3 -->
+                <div id="slidingDiv2" class="toggleDiv row-fluid single-project">
+                    <div class="span6">
+                        <img src="images/portafolio/cosmeticos.jpg" alt="project 3">
+                    </div>
+                    <div class="span6">
+                        <div class="project-description">
+                            <div class="project-title clearfix">
+                                <h3>Cosméticos</h3>
+                                <span class="show_hide close">
+                                    <i class="icon-cancel"></i>
+                                </span>
+                            </div>
+                            <p>“Cualquier cosa que seas capaz de conseguir y creer lo puedes lograr”. <br>
+                                Porque ser hermosa es un placer y no una obligación. Descubre tu comienzo con nuestra línea de maquillajes y cuidado de la piel Mary Kay
+                            </p>
+                            <a href="https://mkecatalog.appspot.com/?project=mk-mexico&lang=es"><button class="message-btn2">Ver catálogo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End details for portfolio project 3 -->
+                <!-- Start details for portfolio project 4 -->
+                <div id="slidingDiv3" class="toggleDiv row-fluid single-project">
+                    <div class="span6">
+                        <img src="images/portafolio/ropa.png" alt="project 4">
+                    </div>
+                    <div class="span6">
+                        <div class="project-description">
+                            <div class="project-title clearfix">
+                                <h3>Prendas confortables</h3>
+                                <span class="show_hide close">
+                                    <i class="icon-cancel"></i>
+                                </span>
+                            </div>
+                            <p>La comodidad y frescura del estilo Confort indiscutiblemente está aquí para hacernos la vida más práctica y confortable con los cientos de looks que podemos crear. El estilo Confort, que inicialmente surgió como un look casual e informal, ha evolucionado a tal forma, que hoy podemos definirlo como un estilo personal que tiene prendas que se adaptan a cualquier situación.</p>
+                            <a href="http://cdn-img.andrea.com/mx/1/449/?_ga=2.218096086.1924345235.1648775939-1981268746.1648775939&_gac=1.162212302.1648775939.CjwKCAjwopWSBhB6EiwAjxmqDTlnbVcUwe6C5sbrMzRYBjEkmWCd-Z2iZ1M0h2HGp_CXflyi0UYsuxoCY2EQAvD_BwE"><button class="message-btn2">Ver catálogo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End details for portfolio project 4 -->
+                <!-- Start details for portfolio project 5 -->
+                <div id="slidingDiv4" class="toggleDiv row-fluid single-project">
+                    <div class="span6">
+                        <img src="images/portafolio/andrea.png" alt="project 5">
+                    </div>
+                    <div class="span6">
+                        <div class="project-description">
+                            <div class="project-title clearfix">
+                                <h3>Calzado para el verano</h3>
+                                <span class="show_hide close">
+                                    <i class="icon-cancel"></i>
+                                </span>
+                            </div>
+                            <p>Para toda la familia un zapato es mucho más que solo caminar.
+                                Nada revela mejor que eres toda una  fashionista que poder reconocer cada tipo de zapato con solo verlo, tanto los zapatos para mujer más básicos así como las variaciones que han surgido en diferentes capitales mundiales de la moda.</p>
+                                <a href="http://cdn-img.andrea.com/mx/1/441/?_ga=2.63960175.1936451867.1648775663-647732363.1648775663&_gac=1.2821892.1648776997.EAIaIQobChMI1OvIitvx9gIVWoKDBx3S5gbREAAYASAAEgIoePD_BwE"><button class="message-btn2">Ver catálogo</button></a>
+                            </div>
+                        </div>
+                </div>
+                <!-- End details for portfolio project 5 -->
+                <!-- Start details for portfolio project 6 -->
+                <div id="slidingDiv5" class="toggleDiv row-fluid single-project">
+                    <div class="span6">
+                        <img src="images/portafolio/joyeria.jpg" alt="project 6">
+                    </div>
+                    <div class="span6">
+                        <div class="project-description">
+                            <div class="project-title clearfix">
+                                <h3>Fuerza y belleza</h3>
+                                <span class="show_hide close">
+                                    <i class="icon-cancel"></i>
+                                </span>
+                            </div>
+                            <p>“Las palabras de amor se las lleva el viento, pero las joyas se quedan para siempre”. <br>
+                                Siente la seguridad al portar un bello anillo o collar de nuestra nueva colección 2022.
+                            </p>
+                            <a href="https://cristaljoyas.com/catalogo"><button class="message-btn2">Ver catálogo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End details for portfolio project 6 -->
+                <!-- Start details for portfolio project 7 -->
+                <div id="slidingDiv6" class="toggleDiv row-fluid single-project">
+                    <div class="span6">
+                        <img src="images/portafolio/deporte.jpg" alt="project 7">
+                    </div>
+                    <div class="span6">
+                        <div class="project-description">
+                            <div class="project-title clearfix">
+                                <h3>Ropa deportiva</h3>
+                                <span class="show_hide close">
+                                    <i class="icon-cancel"></i>
+                                </span>
+                            </div>
+                            <p> Dales un giro urbano a tus looks y muestra tu lado más versátil. Si eres de los más atrevidos puedes apostar por tenis multicolores o con estampados modernos, que además de atraer miradas te aseguran el máximo confort durante toda tu rutina. Queremos ofrecerte productos dinámicos y funcionales.
+                            </p>
+                            <a href="http://cdn-img.andrea.com/mx/25/337/"><button class="message-btn2">Ver catálogo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End details for portfolio project 7 -->
+                <!-- Start details for portfolio project 8 -->
+                <div id="slidingDiv7" class="toggleDiv row-fluid single-project">
+                    <div class="span6">
+                        <img src="images/portafolio/tacones.png" alt="project 8">
+                    </div>
+                    <div class="span6">
+                        <div class="project-description">
+                            <div class="project-title clearfix">
+                                <h3>Calzado para la primavera</h3>
+                                <span class="show_hide close">
+                                    <i class="icon-cancel"></i>
+                                </span>
+                            </div>
+                            <p>¡Lo mejor de la primavera!<br>
+                                Dale a una chica los zapatos correctos y conquista al mundo.<br>
+                                los zapatos que se convirtieron en tendencia se caracterizan especialmente por su comodidad, inspirados en la elección de las personas.</p>
+                            <a href="http://cdn-img.andrea.com/mx/1/448/?_ga=2.171225952.1936451867.1648775663-647732363.1648775663&_gac=1.249897266.1648776997.EAIaIQobChMI1OvIitvx9gIVWoKDBx3S5gbREAAYASAAEgIoePD_BwE"><button class="message-btn2">Ver catálogo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End details for portfolio project 8 -->
+                <!-- Start details for portfolio project 9 -->
+                <div id="slidingDiv8" class="toggleDiv row-fluid single-project">
+                    <div class="span6">
+                        <img src="images/portafolio/accesorios.jpg" alt="project 9">
+                    </div>
+                    <div class="span6">
+                        <div class="project-description">
+                            <div class="project-title clearfix">
+                                <h3>Accesorios</h3>
+                                <span class="show_hide close">
+                                    <i class="icon-cancel"></i>
+                                </span>
+                            </div>
+                            <p>"El estilo personal se muestra con la ropa, pero se perfecciona con los accesorios”. <br>
+                                Crea tu propio estilo y dale un toque mejorado a tu outfit con nuestro nuevo catálogo de accesorios 2022
+                            </p>
+                            <a href="http://cdn-img.andrea.com/mx/1/18/?_ga=2.115915457.635873507.1648779608-943319321.1648779608"><button class="message-btn2">Ver catálogo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End details for portfolio project 9 -->
+                    
+                        
+                        
+                <ul id="portfolio-grid" class="thumbnails row">
+                    <li class="span4 mix web">
+                        <div class="thumbnail">
+                            <img src="images/portafolio/confort.jpg" alt="project 1">
+                            <a href="#single-project" class="more show_hide" rel="#slidingDiv">
+                                <i class="icon-plus"></i>
+                            </a>
+                            <h3>Primavera-Verano</h3>
+                            <p>Descubre el confort de la vida</p>
+                            <div class="mask"></div>
+                        </div>
+                    </li>
+                    <li class="span4 mix photo">
+                        <div class="thumbnail">
+                            <img src="images/portafolio/backtoclass.jpg" alt="project 2">
+                            <a href="#single-project" class="show_hide more" rel="#slidingDiv1">
+                                <i class="icon-plus"></i>
+                            </a>
+                            <h3>Regreso a clases</h3>
+                            <p>El mejor calzado para volver a la rutina</p>
+                            <div class="mask"></div>
+                        </div>
+                    </li>
+                    <li class="span4 mix identity">
+                        <div class="thumbnail">
+                            <img src="images/portafolio/cosmeticos.jpg" alt="project 3">
+                            <a href="#single-project" class="more show_hide" rel="#slidingDiv2">
+                                <i class="icon-plus"></i>
+                            </a>
+                            <h3>Cosmeticos</h3>
+                            <p>Maquilla tu vida a tu manera</p>
+                            <div class="mask"></div>
+                        </div>
+                    </li>
+                    <li class="span4 mix web">
+                        <div class="thumbnail">
+                            <img src="images/portafolio/ropa.png" alt="project 4">
+                            <a href="#single-project" class="show_hide more" rel="#slidingDiv3">
+                                <i class="icon-plus"></i>
+                            </a>
+                            <h3>Prenas confortables</h3>
+                            <p>Viste con lo mejor de la temporada</p>
+                            <div class="mask"></div>
+                        </div>
+                    </li>
+                    <li class="span4 mix photo">
+                        <div class="thumbnail">
+                            <img src="images/portafolio/andrea.png" alt="project 5">
+                            <a href="#single-project" class="show_hide more" rel="#slidingDiv4">
+                                <i class="icon-plus"></i>
+                            </a>
+                            <h3>Calzado para el verano</h3>
+                            <p>Disfruta de cada paso</p>
+                            <div class="mask"></div>
+                        </div>
+                    </li>
+                    <li class="span4 mix identity">
+                        <div class="thumbnail">
+                            <img src="images/portafolio/joyeria.jpg" alt="project 6">
+                            <a href="#single-project" class="show_hide more" rel="#slidingDiv5">
+                                <i class="icon-plus"></i>
+                            </a>
+                            <h3>Fuerza y belleza</h3>
+                            <p>Que cada elemento sea parte de ti</p>
+                            <div class="mask"></div>
+                        </div>
+                    </li>
+                    <li class="span4 mix web">
+                        <div class="thumbnail">
+                            <img src="images/portafolio/deporte.jpg" alt="project 7" />
+                            <a href="#single-project" class="show_hide more" rel="#slidingDiv6">
+                                <i class="icon-plus"></i>
+                            </a>
+                            <h3>Ropa deportiva</h3>
+                            <p>Muestra tu saludable figura</p>
+                            <div class="mask"></div>
+                        </div>
+                    </li>
+                    <li class="span4 mix photo">
+                        <div class="thumbnail">
+                            <img src="images/portafolio/tacones.png" alt="project 8">
+                            <a href="#single-project" class="show_hide more" rel="#slidingDiv7">
+                                <i class="icon-plus"></i>
+                            </a>
+                            <h3>Calzado para la primavera</h3>
+                            <p>Que cada paso florezca en ti</p>
+                            <div class="mask"></div>
+                        </div>
+                    </li>
+                    <li class="span4 mix identity">
+                        <div class="thumbnail">
+                            <img src="images/portafolio/accesorios.jpg" alt="project 9">
+                            <a href="#single-project" class="show_hide more" rel="#slidingDiv8">
+                                <i class="icon-plus"></i>
+                            </a>
+                            <h3>Accesorios</h3>
+                            <p>Tu estilo, tus accesorios</p>
+                            <div class="mask"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio section end -->
+                
+    <!-- Footer section start -->
+    <div class="footer">
+        <p>&copy; EYAS 2022 </p>
+    </div>
+    <!-- Footer section end -->
+    <!-- ScrollUp button start -->
+    <div class="scrollup">
+        <a href="#">
+            <i class="icon-up-open"></i>
+        </a>
+    </div>
+    <!-- ScrollUp button end -->
+    <!-- Include javascript -->
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/jquery.cslider.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="js/jquery.inview.js"></script>
+    <!-- css3-mediaqueries.js for IE8 or older -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

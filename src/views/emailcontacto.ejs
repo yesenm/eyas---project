@@ -1,0 +1,67 @@
+<html>
+<body>
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span5 contact-form centered">
+                <h3>CONTACTANOS</h3>
+                <div id="successSend" class="alert alert-success invisible">
+                    <form id="form" action="#">
+                        <div class="control-group">
+                            <div class="controls">
+                                <input class="span12" type="text" name="name" placeholder="Tu Nombre..." required/>
+                                <div class="error left-align" id="err-name">Por favor introduce tu nombre.</div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <input class="span12" type="email" name="email" placeholder=" Correo electronico..." required/>
+                                <div class="error left-align" id="err-email">Por favor introduce tu correo electronico.</div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <textarea class="span12" name="comment"  placeholder="Comentarios..." required></textarea>
+                                <div class="error left-align" id="err-comment">Comparte con nosotros tus dudas o comentarios</div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <input type="submit" id="button" class="message-btn" value="Enviar Mensaje">
+                            </div>
+                        </div>
+                    </form>
+                    <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+                    </script>
+                
+                <script type="text/javascript">
+                    emailjs.init('QAOb8505j6E7rdqz5')
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const btn = document.getElementById('button');
+    
+    document.getElementById('form')
+    .addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        btn.value = 'Enviando...';
+        
+        const serviceID = 'default_service';
+        const templateID = 'template_45h4mww';
+        
+        emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            btn.value = 'Enviar mensaje';
+            alert('Mensaje enviado exitosamente');
+        }, (err) => {
+            btn.value = 'Enviar mensaje';
+            alert(JSON.stringify(err));
+        });
+    });
+</script>
+</body>
+</html>

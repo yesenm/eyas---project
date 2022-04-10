@@ -1,0 +1,64 @@
+<%- include('partials/headerAdmin') %> 
+
+<!-- form section start -->
+<div class="section secondary-section">
+    <div class="triangle"></div>
+    <div class="container">
+        <div class="title">
+            <%- include ('partials/mensaje') %> 
+            <% if(typeof validaciones != 'undefined') { %>
+                <% validaciones.forEach( (validacion)=> { %>  
+                    <div class="header alert alert-danger alert-dismissible">
+                        <%= validacion.msg %>
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+                    </div>
+                    <% }) %> 
+                    <% } %> 
+            <h1>Registra un administrador</h1>
+            <p><b><%= user.username %></b>, recuerda que este tendrá acceso completo al sistema</p>
+        </div>
+    </div>
+    <div class="map-wrapper">
+        <div class="map-canvas"><img src="images/logoeyas2.png" class="imagenregistro"></div>
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span5 contact-form2 centered">
+                    <h1>Registrar</h1>
+                    <form id="contact-form2" action="/register_a" method="post">
+                        <div class="control-group">
+                            <div class="controls">
+                                <input class="span12" type="text" name="username" placeholder="Nombre de usuario" value="<% if(typeof valores != 'undefined') { %><%= valores.username %><%}%>">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <input type="email" class="span12" name="email" placeholder="Correo eléctronico" value="<% if(typeof valores != 'undefined') { %><%= valores.email %><%}%>">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <input type="password" class="span12" name="password" placeholder="Contraseña" value="<% if(typeof valores != 'undefined') { %><%= valores.password %><%}%>">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <select class="span12 selectuser" name="rol" required>
+                                    <option value="1">uno</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <button id="send-mail" class="message-btn">Registrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- form section edn -->
+
+
+<%- include('partials/footerAdmin') %> 

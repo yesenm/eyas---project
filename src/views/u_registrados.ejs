@@ -1,0 +1,60 @@
+<%- include('partials/headerAdmin') %> 
+<!-- Price section start -->
+<div id="price" class="section secondary-section">
+    <div class="triangle"></div>
+    <div class="container">
+        <div class="title">
+            <%- include ('partials/mensaje') %> 
+            <h1>Usuarios Registrados</h1>
+            <p><b><%= user.username %></b>, revisa los usuarios que se han registrado en EYAS.</p>
+        </div>
+        
+        <!-- Tabla -->
+        <center>
+            <div class="section secondary-section">
+                <table id="tabla" class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Usuario</th>
+                            <th>Email</th>
+                            <th>Rol</th>
+                            <th>Opciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for (var i = 0; i < users.length; i++){ %>
+                            <tr>
+                                <td><%= i + 1 %></td>
+                                <td><%= users[i].username %></td>
+                                <td><%= users[i].email %></td>
+                                <td>
+                                    <% if(users[i].rol == 1){  %>
+                                            Administrador
+                                    <% }else{ %>
+                                            Usuario 
+                                    <% } %>  
+                                </td>
+                                <td>
+                                    <a href="/actualizar_u/<%= users[i]._id %>">
+                                        <button class="btn btn-success"><i class="bi bi-pencil-fill"></i></button>
+                                    </a>
+                                    <a href="/deleteusers/<%= users[i]._id %>">
+                                        <button class="btn btn-danger"><i class="bi bi-trash-fill"></i></button>
+                                        
+                                    </a>
+                                </td>
+                            </tr>
+                            <% } %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </center>
+        <!-- Fin de tabla -->
+        
+    </div>
+</div>
+<!-- Price section end -->
+
+<%- include('partials/footerAdmin') %> 

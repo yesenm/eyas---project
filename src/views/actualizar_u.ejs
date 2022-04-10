@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMINISTRADOR</title>
+    <!-- Datatable -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <!-- Iconos Boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Load Roboto font -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <!-- Load css styles -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/pluton.css" />
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
+        <![endif]-->
+            <link rel="stylesheet" type="text/css" href="../css/jquery.cslider.css" />
+            <link rel="stylesheet" type="text/css" href="../css/jquery.bxslider.css" />
+            <link rel="stylesheet" type="text/css" href="../css/animate.css" />
+            <!-- Fav and touch icons -->
+            <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/ico/apple-touch-icon-144.png">
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/ico/apple-touch-icon-114.png">
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/apple-touch-icon-72.png">
+            <link rel="apple-touch-icon-precomposed" href="../images/ico/apple-touch-icon-57.png">
+            <link rel="shortcut icon" href="images/ico/favicon.ico">
+        </head>
+
+        <body>
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <a href="#" class="brand">
+                            <img src="../images/logoeyas2.png" alt="Logo" />
+                            <!-- This is website logo -->
+                        </a>
+                        <!-- Navigation button, visible on small resolution -->
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <i class="icon-menu"></i>
+                        </button>
+                        <!-- Main navigation -->
+                        <div class="nav-collapse collapse pull-right">
+                            <ul class="nav" id="top-navigation">
+                                <li><a class="active" href="../b_entrada">Buzón de entrada</a></li>
+                                <li><a href="../registro_a">Registrar administrador</a></li>
+                                <li><a href="../u_registrados">Usuarios Registrados</a></li>
+                                <li><a href="../logs">logs</a></li>
+                                <li><a href="../logout">Cerrar sesión</a></li>
+                            </ul>
+                        </div>
+                        <!-- End main navigation -->
+                    </div>
+                </div>
+            </div>
+<!-- form section start -->
+<div class="section secondary-section">
+    <div class="triangle"></div>
+<%- include ('partials/mensaje') %> 
+
+    <div class="map-wrapper">
+        <div class="map-canvas"><img src="/images/logoeyas2.png" class="imagenregistro"></div>
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span5 contact-form2 centered">
+                    <h1>Editar usuario</h1>
+                    <form id="contact-form2" action="/editar/<%= user._id %>" method="post">
+                        <div class="control-group">
+                            <div class="controls">
+                                <input type="text" class="span12" name="email" value="<%= user.email %>" placeholder="Correo eléctronico">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                            <input type="number" max="2" min="1" class="span12" name="rol" value="<%= user.rol %>" placeholder="Rol">
+                            <div class="form-text">Recuerda que: <b>1 = Administrador</b> y <b>2 = Usuario</b></div>
+                                
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <button id="send-mail" class="message-btn">Actualizar</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- form section edn -->
+
+
+<%- include ('partials/footerAdmin') %> 

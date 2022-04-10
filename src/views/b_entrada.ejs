@@ -1,0 +1,53 @@
+<%- include('partials/headerAdmin') %> 
+
+<!-- Price section start -->
+<div id="price" class="section secondary-section">
+    <div class="triangle"></div>
+    <div class="container">
+        <div class="title">
+            <%- include ('partials/mensaje') %> 
+            <h1>Buzón de entrada</h1>
+            <p>¡Bienvenido <b><%= user.username %></b>!  </p>
+            <p>Revisa los mensajes que han dejado en tu página.</p>
+        </div>
+        
+        <!-- Tabla -->
+        <center>
+            <div class="section secondary-section">
+                <table id="tabla" class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Remitente</th>
+                            <th>Email</th>
+                            <th>Mensaje</th>
+                            <th>Opciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for (var i = 0; i < tasks.length; i++){ %>
+                            <tr>
+                                <td><%= i + 1 %></td>
+                                <td><%= tasks[i].remitente %></td>
+                                <td><%= tasks[i].email_remitente %></td>
+                                <td><%= tasks[i].mensaje%></td>
+                                <td>
+                                    
+                                    <button class="btn btn-warning" id="botonEmail" value="<%= tasks[i]._id %>" onclick="enviarEmail()"><i class="bi bi-envelope-fill"></i></button>
+                                    
+                                    <a href="/deletem/<%= tasks[i]._id %>"><button class="btn btn-danger"><i class="bi bi-trash-fill"></i></button></a>
+                                </td>
+                            </tr>
+                            <% } %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </center>
+        <!-- Fin de tabla -->
+        
+    </div>
+</div>
+<!-- Price section end -->
+
+<%- include('partials/footerAdmin') %> 

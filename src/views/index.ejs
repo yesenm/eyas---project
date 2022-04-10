@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EYAS</title>
+    <!-- Load Roboto font -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <!-- Load css styles -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/pluton.css" />
+    <!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72.png">
+        <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
+        <link rel="shortcut icon" href="images/ico/favicon.ico">
+    </head>
+    
+    <body>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a href="#" class="brand">
+                        <img src="images/logoeyas2.png" alt="Logo" />
+                        <!-- This is website logo -->
+                    </a>
+                    <!-- Navigation button, visible on small resolution -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <i class="icon-menu"></i>
+                    </button>
+                    <!-- Main navigation -->
+                    <div class="nav-collapse collapse pull-right">
+                        <ul class="nav" id="top-navigation">
+                            <li class="active"><a href="#home">Inicio</a></li>
+                            <li><a href="#service">Servicios</a></li>
+                            <li><a href="#promocionales">promocionales</a></li>
+                            <li><a href="#about">nosotros</a></li>
+                            <li><a href="#clients">Clientes</a></li>
+                            <li><a href="#contact">Contacto</a></li>
+                            <li><a href="login">Login</a></li>
+                            
+                        </ul>
+                    </div>
+                    <!-- End main navigation -->
+                </div>
+            </div>
+        </div>
+        <!-- Start home section -->
+        <div id="home">
+            <!-- Start cSlider -->
+            <div id="da-slider" class="da-slider">
+                <div class="square"></div>
+                <!-- mask elemet use for masking background image -->
+                <div class="mask"></div>
+                <!-- All slides centred in container element -->
+                <div class="container">
+                    <!-- Start first slide -->
+                    <div class="da-slide">
+                        <h2 class="fittext2">ACCESORIOS</h2>
+                        <h4>Disfruta de nuestras deliciosas fragancias <br>
+                            y demás accesorios de nuestros catalogos</h4>
+                            <p>Los perfumes son una fragancia unica, que hacen sentir a la mujer mas atractiva y hermosa con sus deliciosos aromas.
+                                Aunado a lo anterior, cada accesorio forma parte de la fortaleza humana de la mujer.
+                                Ven y disfrutalo en todas nuestas sucursales.</p>
+                                <div class="da-img">
+                                    <img src="images/perfume.png" alt="image01" width="320">
+                                </div>
+                            </div>
+                            <!-- End first slide -->
+                            <!-- Start second slide -->
+                            <div class="da-slide">
+                                <h2>COSMETICOS</h2>
+                                <h4>La simplicidad es clave de la verdadera elegancia</h4>
+                                <p>Los accesorios son articulos que contribuyen para mejorar los atuendos de una mujer para que se vea impresionante.</p>
+                                <div class="da-img">
+                                    <img src="images/cosmeticos.png" width="320" alt="image02">
+                                </div>
+                            </div>
+                            <!-- End second slide -->
+                            <!-- Start third slide -->
+                            <div class="da-slide">
+                                <h2>ZAPATOS</h2>
+                                <h4>Subete a tus zapatos y pisa fuerte la vida.</h4>
+                                <p>Los zapatos son un calzado con diseños dedicados  a las chicas, que le ayudan a pisar con firmeza y elegancia.</p>
+                                <div class="da-img">
+                                    <img src="images/zapatos.png" width="320" alt="image03">
+                                </div>
+                            </div>
+                            <div class="da-slide">
+                                <h2>ROPA</h2>
+                                <h4>El secreto de un gran estilo es sentirte bien con lo que vistes.</h4>
+                                <p>La ropa transmite la personalidad que tienes, ademas de que te puees expresar y comunicar a traves de ella.</p>
+                                <div class="da-img">
+                                    <img src="images/ves.png" width="320" alt="image03">
+                                </div>
+                            </div>
+                            <!-- Start third slide -->
+                            <!-- Start cSlide navigation arrows -->
+                            <div class="da-arrows">
+                                <span class="da-arrows-prev"></span>
+                                <span class="da-arrows-next"></span>
+                            </div>
+                            <!-- End cSlide navigation arrows -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End home section -->
+                <!-- Service section start -->
+                <div class="section primary-section" id="service">
+                    <div class="container">
+                        <!-- Start title section -->
+                        <div class="title">
+                            <%- include('partials/mensaje') %> 
+                            <% if(typeof validaciones != 'undefined') { %>
+                                <% validaciones.forEach( (validacion)=> { %>  
+                                    <div class="header alert alert-danger alert-dismissible">
+                                        <%= validacion.msg %>
+                                        <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+                                    </div>
+                                    <% }) %> 
+                                    <% } %> 
+                                    <h1>¿Qué hacemos?</h1>
+                                    <!-- Section's title goes here -->
+                                    <p>Te damos todas las herramientas para que disfrutes de lo bien que se siente ser mujer.
+                                        Aquí, encontrarás centenares de maneras para lucir tu feminidad y todo el brillo que eres capaz de emanar.
+                                    </p>
+                                    <!--Simple description for section goes here. -->
+                                </div>
+                                <div class="row-fluid">
+                                    <div class="span4">
+                                        <div class="centered service">
+                                            <div class="circle-border zoom-in">
+                                                <img class="img-circle" src="images/vestir.png" alt="service 1">
+                                            </div>
+                                            <h3>Vestimenta</h3>
+                                            <p>Mantente a la moda con los mejores estilos que ofrecen nuestras marcas.</p>
+                                        </div>
+                                    </div>
+                                    <div class="span4">
+                                        <div class="centered service">
+                                            <div class="circle-border zoom-in">
+                                                <img class="img-circle" src="images/calzado.png" alt="service 2" />
+                                            </div>
+                                            <h3>Zapatería</h3>
+                                            <p>Elige entre los centenares de zapatillas que estamos dispuestos a ofrecerte.</p>
+                                        </div>
+                                    </div>
+                                    <div class="span4">
+                                        <div class="centered service">
+                                            <div class="circle-border zoom-in">
+                                                <img class="img-circle" src="images/labial.png" alt="service 3">
+                                            </div>
+                                            <h3>Belleza</h3>
+                                            <p>Sabemos que te encanta lucir bella. No dudes en usar tu mejor labial, ese que hace te relucir.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Service section end -->
+                        
+                        <!-- Newsletter section start -->
+                        <div class="section third-section">
+                            <div class="container newsletter">
+                                <div class="sub-section">
+                                    <div class="title clearfix">
+                                        <div class="pull-left">
+                                            <h3>EYAS</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="span5">
+                                            <h4>¡Aún no te vayas!,
+                                                Nos interesa tu bienestar.
+                                            </h4>
+                                            <p>Inicia sesión y participa para llevarte el 50% de descuento en cada compa mayor a $400 MXN</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="span7">
+                                            <br><center>
+                                                <a href="login"><button class="botonlogin">Iniciar Sesión</button></a></center>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Newsletter section end -->
+                        
+                        <div class="section secondary-section" id="promocionales">
+                            <div class="triangle"></div>
+                            <div class="container">
+                                <div class="title">
+                                    <h1>Primavera-Verano</h1>
+                                    <p>Tendencias en ropa y más...</p>
+                                </div>
+                                <div class="row-fluid team">
+                                    <div class="span4" id="first-person">
+                                        <div class="thumbnail">
+                                            <img src="images/Catalog1.jpg" alt="team 1">
+                                            <h3>Calzado</h3>
+                                            <ul class="social">
+                                                <li>
+                                                    <a href="">
+                                                        <img src="images/calzado.PNG" class="calzado dama" width="40" height="35">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="mask">
+                                                <h2>Cosmeticos</h2>
+                                                <p>Si quieres saber más acerca de estos productos, busca nuestra sección de catálogos al iniciar sesión.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span4" id="second-person">
+                                        <div class="thumbnail">
+                                            <img src="images/Catalog2.jpg" alt="team 1">
+                                            <h3>Vestimenta</h3>
+                                            <ul class="social">
+                                                <li>
+                                                    <a href="">
+                                                        <img src="images/vestir.PNG" class="ropa" width="40" height="35">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="mask">
+                                                <h2>Cosmeticos</h2>
+                                                <p>Si quieres saber más acerca de estos productos, busca nuestra sección de catálogos al iniciar sesión.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span4" id="third-person">
+                                        <div class="thumbnail">
+                                            <img src="images/Catalog3.jpg" alt="team 1">
+                                            <h3>Belleza</h3>
+                                            <ul class="social">
+                                                <li>
+                                                    <a href="">
+                                                        <img src="images/labial.PNG" class="cosmeticos" width="40" height="32">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="mask">
+                                                <h2>Cosmeticos</h2>
+                                                <p>Si quieres saber más acerca de estos productos, busca nuestra sección de catálogos al iniciar sesión.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- About us section start -->
+                        <div class="section primary-section" id="about">
+                            <div class="triangle"></div>
+                            <div class="container">
+                                <div class="about-text centered">
+                                    <h1>Nosotros</h1>
+                                    <p>Nuestro objetivo radica en hacerte sentir bella, por eso, nuestra empresa esta centrada 
+                                        en brindarte seguridad pormedio de nuestraas marcas asocuadas, ofreciendote los mejores
+                                        catalagos a nivel nacional, donde econtraras todo tipo de elementos para estar a la moda y 
+                                        perfectamente en armonía con tu persona.
+                                    </p>
+                                    <h3>Nuestra Visión</h3>
+                                    <p> Ser una empresa que se extienda a nivel internacional, manteniendonos siempre a la moda,
+                                        brindandole a nuestros clientes los mejores precios y la mejor calidad en todos los productos,
+                                        en un periodo de cuatro años.
+                                    </p>
+                                </div>
+                                <h3>Nuestros Productos</h3>
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <ul class="skills">
+                                            <li>
+                                                <span class="bar" data-width="100%"></span>
+                                                <h3>Vestimenta</h3>
+                                            </li>
+                                            <li>
+                                                <span class="bar" data-width="80%"></span>
+                                                <h3>Cosmeticos</h3>
+                                            </li>
+                                            <li>
+                                                <span class="bar" data-width="95%"></span>
+                                                <h3>Zapatería</h3>
+                                            </li>
+                                            <li>
+                                                <span class="bar" data-width="70%"></span>
+                                                <h3>Accesorios</h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="span6">
+                                        <div class="highlighted-box center">
+                                            <h3>Nuestra misión</h3>
+                                            <p>Lo mas importante para nosotros es que, nuestros clientes, consigan
+                                                los articulos de su interes cont total facilidad en cualquiera de nuestros puntos de venta sucursal.
+                                                Además, nos interesa que nuestros clientes puedan covertirse en en microempresarios y, de esta manera, su economía crezca 
+                                                a la par que consigue ser beneficiado al implementar su profesionalismo.</p>
+                                                <a href="login"><button class="button button-sp">Unete a nosotros</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <!-- About us section end -->
+                        <div class="section secondary-section">
+                            <div class="triangle"></div>
+                            <div class="container centered">
+                                <p class="large-text">La elegancia no es la abundancia de la sencillez. Es la ausencia de complejidad.</p>
+                                <a href="login" class="button">Unete a EYAS</a>
+                            </div>
+                        </div>
+                        <!-- Client section start -->
+                        <!-- Client section start -->
+                        <div id="clients">
+                            <div class="section primary-section">
+                                <div class="triangle"></div>
+                                <div class="container">
+                                    <div class="title">
+                                        <h1>¿Qué dicen nuestros clientes?</h1>
+                                        <p>Tu opunión es importante; te mostramos las que hemos recibido.</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="span4">
+                                            <div class="testimonial">
+                                                <p>"Donde la comodidad y la elegancia se unen. EYAS, ha logrado hacer mis días más amenod, el servicio y su misión, son asuntos que lograron conquistarme.</p>
+                                                <div class="whopic">
+                                                    <div class="arrow"></div>
+                                                    <img src="images/clients/irene.jpg" class="centered" alt="client 1">
+                                                    <strong>Irene 
+                                                        <small>Cliente</small>
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="span4">
+                                            <div class="testimonial">
+                                                <p>""Antes de encontrar a EYAS, mi vida no tenía sentido. No existe algo más reluciente que este sitio, pues reune todo lo que necesito en un solo lugar.""</p>
+                                                <div class="whopic">
+                                                    <div class="arrow"></div>
+                                                    <img src="images/clients/suzy.jpg" class="centered" alt="client 2">
+                                                    <strong>Suzy
+                                                        <small>Cliente</small>
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="span4">
+                                            <div class="testimonial">
+                                                <p>"EYAS, me brindó un servicio excelente. Decidí que seré su cliente de por vida; la calidad de sus productos lo merece. ¡Éxito para EYAS!"</p>
+                                                <div class="whopic">
+                                                    <div class="arrow"></div>
+                                                    <img src="images/clients/lia.jpg" class="centered" alt="client 3">
+                                                    <strong>Lia
+                                                        <small>Cliente</small>
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="testimonial-text">
+                                        "La perfección no se logra cuando no hay nada más que agregar, sino cuando no queda nada que quitar"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- Contact section start -->
+                        <div id="contact" class="contact">
+                            <div class="section secondary-section">
+                                <div class="triangle"></div>
+                                <div class="container">
+                                    <div class="title">
+                                        <h1>Contáctanos</h1>
+                                        <p>Dejanos un mensaje, queremos saber en qué estás pensando.</p>
+                                    </div>
+                                </div>
+                                <div class="map-wrapper">
+                                    <div class="map-canvas" id="map-canvas">Loading map...</div>
+                                    <div class="container">
+                                        <div class="row-fluid">
+                                            <div class="span5 contact-form centered">
+                                                <h3>CONTÁCTANOS</h3>
+                                                <form id="contact-form" action="/addm" method="post">
+                                                    <div class="control-group">
+                                                        <div class="controls">
+                                                            <input class="span12" type="text" id="name" name="remitente" placeholder="Nombre..." value="<% if(typeof valores != 'undefined') { %><%= valores.remitente %><%}%>">
+                                                        </div>
+                                                    </div>
+                                                    <div class="control-group">
+                                                        <div class="controls">
+                                                            <input class="span12" type="email" name="email_remitente" id="email" placeholder="Correo electronico..." value="<% if(typeof valores != 'undefined') { %><%= valores.email_remitente %><%}%>">
+                                                        </div>
+                                                    </div>
+                                                    <div class="control-group">
+                                                        <div class="controls">
+                                                            <textarea class="span12" name="mensaje" id="comment" placeholder="Comentario..." value="<% if(typeof valores != 'undefined') { %><%= valores.mensaje %><%}%>"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="control-group">
+                                                        <div class="controls">
+                                                            <button type="submit" id="buttonEnviarCorreo" class="message-btn" value="Enviar Mensaje">Enviar mensaje</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="span9 center contact-info">
+                                            <p>Lic. Benito Juárez, Zona Centro, 20000 Aguascalientes, Ags.</p>
+                                            <p class="info-mail">eyas@gmail.com</p>
+                                            <p>+52 449 915 6133</p>
+                                            <p>+52 449 915 6130</p>
+                                            <div class="title">
+                                                <h3>Nuestras Redes Sociales</h3>
+                                            </div>
+                                        </div>
+                                        <div class="row-fluid centered">
+                                            <ul class="social">
+                                                <li>
+                                                    <a href="">
+                                                        <span class="icon-facebook-circled"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span class="icon-twitter-circled"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span class="icon-linkedin-circled"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span class="icon-pinterest-circled"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span class="icon-dribbble-circled"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span class="icon-gplus-circled"></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Contact section edn -->
+                            <!-- Footer section start -->
+                            <div class="footer">
+                                <p>&copy; EYAS 2022 </p>
+                            </div>
+                            <!-- Footer section end -->
+                            <!-- ScrollUp button start -->
+                            <div class="scrollup">
+                                <a href="#">
+                                    <i class="icon-up-open"></i>
+                                </a>
+                            </div>
+                            <!-- ScrollUp button end -->
+                            <!-- Include javascript -->
+                            <script src="js/jquery.js"></script>
+                            <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+                            <script type="text/javascript" src="js/bootstrap.js"></script>
+                            <script type="text/javascript" src="js/modernizr.custom.js"></script>
+                            <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+                            <script type="text/javascript" src="js/jquery.cslider.js"></script>
+                            <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+                            <script type="text/javascript" src="js/jquery.inview.js"></script>
+                            <!-- Load google maps api and call initializeMap function defined in app.js -->
+                            <script async="" defer="" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=initializeMap"></script>
+                            <!-- css3-mediaqueries.js for IE8 or older -->
+                            <!--[if lt IE 9]>
+                                <script src="js/respond.min.js"></script>
+                                <![endif]-->
+                                <script type="text/javascript" src="js/app.js"></script>
+                                <script type="text/javascript" src="../routes/index.js"></script>
+                                
+                            </body>
+                            </html>
